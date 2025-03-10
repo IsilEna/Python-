@@ -1,0 +1,51 @@
+# Geography Quiz
+
+print('Welcome to the Geography Quiz!')
+correct_answer = 0
+
+# First Question
+answer = input('Which ocean is the largest in the world: ')
+# I used answer.lower() so that the quiz can accept both uppercase and lowercase letters.
+if answer.lower() == 'pacific Ocean' or answer.lower() == 'pacific':
+    print('Correct answer!')
+    correct_answer += 1
+else:
+    print('It is not correct answer')
+
+# Second Question
+answer = input('Which mountain is the highest in the world?: ')
+if answer.lower() == 'mount everest' or answer.lower() == 'everest':
+    print('Correct answer!')
+    correct_answer += 1
+else:
+    print('It is not correct answer')
+
+    # Third Question
+answer = input('Which is the largest country by area in the world?: ')
+if answer.lower() == 'russia':
+    print('Correct answer!')
+    correct_answer += 1
+else:
+     print('It is not correct answer')
+
+    # Fourth Question
+answer = input('What is the capital of France?: ')
+if answer.lower() == 'paris':
+    print('Correct answer!')
+    correct_answer += 1
+else:
+    print('It is not correct answer')
+
+    # Fifth Question
+answer = input('How many continents are there in the world?: ')
+if answer == '7':
+    print('Correct answer!')
+    correct_answer += 1
+else:
+     print('It is not correct answer')
+
+
+if correct_answer > 2:
+    print('You won!')
+else:
+     print('You lost!Try again.')
