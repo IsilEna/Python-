@@ -1,0 +1,13 @@
+#Km Mile Converter
+unit = input ('Enter the unit which You want to convert from.(Km or Mile): ')
+distance= float(input('Enter the distance: '))
+if unit == 'Km':
+    distance= distance* 0.621371
+    unit='miles'
+    print(f'Your distance is: {round(distance,2)} {unit}')
+elif unit=='Mile':
+    distance = distance * 1.60934
+    unit = 'km'
+    print(f'Your distance is: {round(distance, 2)} {unit}')
+else:
+    print(f'{unit} is not valid.Try again!')
