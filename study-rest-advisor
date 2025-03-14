@@ -1,0 +1,12 @@
+#Study Rest Advisor
+studied=float(input('how many hours did you study today?'))
+had_class = input("Did you have a class today? (yes/no): ").lower() == "yes"
+
+if studied>= 2 and had_class:
+    print('You can rest today')
+elif studied<2 and studied>0 and not had_class:
+    print('You should study more')
+elif studied>=2 or had_class:
+    print('You can little bit rest and study more')
+elif studied<0 :
+    print('Please enter valid number')
